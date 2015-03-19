@@ -1,0 +1,174 @@
+body{
+    box-sizing: border-box;
+	padding-top: 80px;
+	padding: 80px 50px 0 50px;
+	color: #583618;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.left-column{
+	float: left;
+	padding-right: 60px;
+	position: relative;
+
+	.old-town-logo{
+		margin-left: 50px;
+		background: url("/assets/pics/OTC_logo.png") no-repeat center;
+		background-size: 100%;
+	}
+
+	.left-column-nav{
+		margin-top: 35px;
+
+		.nav-item{
+			font-family: OpenSans-CondensedLight;
+			cursor: pointer;
+			padding-left: 50px;
+			font-size: 20px;
+			height: 50px;
+			line-height: 50px;
+
+			&:hover{
+				color: #F9C489;
+			}
+
+			&.active{
+				background: url("/assets/pics/nav_triangle.png") no-repeat left;				
+			}
+		}
+	}
+
+	.gradient-divider{
+		position: absolute;
+		width: 1px;
+		height: 300px;
+		right: 0px;
+		top: 0px;
+		background: -webkit-linear-gradient(grey, white); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(grey, white); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(grey, white); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(grey, white); /* Standard syntax */
+	}
+}
+
+.right-column{
+	float: left;
+	padding-left: 50px;
+	position: relative;
+
+	.slider-container{
+		width: 100% !important;
+		height: auto !important;
+
+		.content-tile{
+			float: left;
+			.content-title{
+				font-family: OpenSans-CondensedLight;
+				font-size: 37px;
+
+				span{
+					font-family: OpenSans-CondensedBold;
+				}		
+			}
+
+			.content-subtitle{
+				font-family: OpenSans-CondensedBold;
+				font-size: 25px;
+				color: #F29727;
+			}
+
+			.content-image{
+				width: 100%;
+			}
+
+			.content-copy{
+			}
+		}
+		
+		.dots{
+			position: absolute;
+			bottom: -30px;
+			color: transparent;
+
+			.dot{
+				margin-right: 10px;
+				display: inline-block;
+				height: 10px;
+				width: 10px;
+				border-radius: 5px;
+				border: 1px solid #F29727;
+				cursor: pointer;
+
+				&.active{
+					background: #F29727;
+				}
+			}
+		}
+	}
+}
+
+.bottom-info{
+	clear: both;
+	border-top: 2px solid #F29727;
+	margin-top: 50px;
+	padding: 0px 50px;
+	display: inline-block;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.left-column{
+		width: 260px;
+
+		.old-town-logo{
+			height: 105px;
+			width: 120px;
+		}
+	}
+	.right-column{
+		width: calc(100% - 260px)
+	}
+}
+
+@media (min-width: 769px) {
+	.left-column{
+		width: 310px;
+
+		.old-town-logo{
+			height: 140px;
+			width: 160px;
+		}
+	}
+	.right-column{
+		/*min-width: 605px;*/
+		width: calc(100% - 310px)
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024){
+
+}
+
+@media (min-width: 1025px) {
+
+}
+
+@font-face
+{
+  font-family: OpenSans-Light;
+  src: url('/assets/fonts/OpenSans-Light.ttf');
+}
+
+@font-face
+{
+  font-family: OpenSans-CondensedLight;
+  src: url('/assets/fonts/OpenSans-CondLight.ttf');
+}
+
+@font-face
+{
+  font-family: OpenSans-CondensedBold;
+  src: url('/assets/fonts/OpenSans-CondBold.ttf');
+}

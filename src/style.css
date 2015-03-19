@@ -1,0 +1,191 @@
+body {
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding: 80px 50px 0 50px;
+  color: #583618;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.left-column {
+  float: left;
+  padding-right: 60px;
+  position: relative;
+}
+.left-column .old-town-logo {
+  margin-left: 50px;
+  background: url("/assets/pics/OTC_logo.png") no-repeat center;
+  background-size: 100%;
+}
+.left-column .left-column-nav {
+  margin-top: 35px;
+}
+.left-column .left-column-nav .nav-item {
+  font-family: OpenSans-CondensedLight;
+  cursor: pointer;
+  padding-left: 50px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+.left-column .left-column-nav .nav-item:hover {
+  color: #F9C489;
+}
+.left-column .left-column-nav .nav-item.active {
+  background: url("/assets/pics/nav_triangle.png") no-repeat left;
+}
+.left-column .gradient-divider {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  right: 0px;
+  top: 0px;
+  background: -webkit-linear-gradient(grey, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(grey, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(grey, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(grey, white);
+  /* Standard syntax */
+}
+
+.right-column {
+  float: left;
+  padding-left: 50px;
+  position: relative;
+}
+.right-column .slider-container {
+  width: 100% !important;
+  height: auto !important;
+}
+.right-column .slider-container .content-tile {
+  float: left;
+}
+.right-column .slider-container .content-tile .content-title {
+  font-family: OpenSans-CondensedLight;
+  font-size: 37px;
+}
+.right-column .slider-container .content-tile .content-title span {
+  font-family: OpenSans-CondensedBold;
+}
+.right-column .slider-container .content-tile .content-subtitle {
+  font-family: OpenSans-CondensedBold;
+  font-size: 25px;
+  color: #F29727;
+}
+.right-column .slider-container .content-tile .content-image {
+  width: 100%;
+}
+.right-column .slider-container .dots {
+  position: absolute;
+  bottom: -30px;
+  color: transparent;
+}
+.right-column .slider-container .dots .dot {
+  margin-right: 10px;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  border: 1px solid #F29727;
+  cursor: pointer;
+}
+.right-column .slider-container .dots .dot.active {
+  background: #F29727;
+}
+
+.bottom-info {
+  clear: both;
+  border-top: 2px solid #F29727;
+  margin-top: 50px;
+  padding: 0px 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .left-column {
+    width: 260px;
+  }
+  .left-column .old-town-logo {
+    height: 105px;
+    width: 120px;
+  }
+
+  .right-column {
+    width: calc(100% - 260px);
+  }
+}
+@media (min-width: 769px) {
+  .left-column {
+    width: 310px;
+  }
+  .left-column .old-town-logo {
+    height: 140px;
+    width: 160px;
+  }
+
+  .right-column {
+    /*min-width: 605px;*/
+    width: calc(100% - 310px);
+  }
+}
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("/assets/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: OpenSans-CondensedLight;
+  src: url("/assets/fonts/OpenSans-CondLight.ttf");
+}
+@font-face {
+  font-family: OpenSans-CondensedBold;
+  src: url("/assets/fonts/OpenSans-CondBold.ttf");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

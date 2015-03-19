@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Old Town Creative + Interactive</title>
+		<!-- <link rel="shortcut icon" href=""> -->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+
+	    <script src="libs.js" type="text/javascript"></script>
+	    <script src="scripts.js" type="text/javascript"></script>
+	    <script src="templates.js" type="text/javascript"></script>
+	</head>
+	<body ng-app="app" ng-controller="appCtrl">
+		<div class="left-column">
+			<div class="old-town-logo"></div>
+			<ul class="left-column-nav" ng-init="contentIndex = 0">
+				<li class="nav-item" ng-click="changeIndex(0)" ng-class='{active: contentIndex === 0}'>our work</li>
+				<li class="nav-item" ng-click="changeIndex(1)" ng-class='{active: contentIndex === 1}'>our products</li>
+				<li class="nav-item" ng-click="changeIndex(2)" ng-class='{active: contentIndex === 2}'>where we work</li>
+				<li class="nav-item" ng-click="changeIndex(3)" ng-class='{active: contentIndex === 3}'>about</li>
+				<li class="nav-item" ng-click="changeIndex(4)" ng-class='{active: contentIndex === 4}'>contact us</li>
+			</ul>
+			<span class="gradient-divider"></span>
+		</div>
+		<div class="right-column">
+			<slider-container></slider-container>
+		</div>
+		<div class="bottom-info"></div>
+	</body>
+</html>
