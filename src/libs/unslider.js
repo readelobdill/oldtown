@@ -105,9 +105,9 @@
 			};
 			
 			//  Swipe support
-			if($.event.swipe) {
-				this.el.on('swipeleft', _.prev).on('swiperight', _.next);
-			}
+			// if($.event.special.swipe) {
+			// 	this.el.on('swiperight', _.prev).on('swipeleft', _.next);
+			// }
 		};
 		
 		//  Move Unslider to a slide index
@@ -129,8 +129,6 @@
 					$.isFunction(_.opts.complete) && !cb && _.opts.complete(_.el);
 				});
 			}
-
-			$(this.el).trigger('unslider.move', index);
 		};
 		
 		//  Autoplay functionality

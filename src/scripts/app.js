@@ -173,7 +173,11 @@ angular.module('app', [])
 			link: function(scope, elem){
 				var unslider;
 				scope.$watch('contentIndex', function(){
-					if(unslider){ unslider.destroy(); };
+					$contentImage = $(elem).find('.content-image')
+					if(unslider){
+						$contentImage.off('swipeleft').off('swiperight');
+						unslider.destroy();
+					};
 
 					$(elem).unslider({
 							delay: false,
@@ -182,7 +186,9 @@ angular.module('app', [])
 						}
 					);
 					unslider = $(elem).data('unslider');
-					window.unslider = unslider;
+
+					$contentImage.on('swiperight', unslider.prev)
+								 .on('swipeleft', unslider.next);
 				});
 
 			}
