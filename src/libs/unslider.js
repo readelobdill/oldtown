@@ -82,7 +82,7 @@
 			}
 			
 			//  Custom keyboard support
-			this.opts.keys && $(document).keydown(this.keys);
+			this.opts.keys && $(document).on('keydown.unslider', this.keys);
 			
 			//  Dot pagination
 			this.opts.dots && this.dots();
@@ -117,7 +117,7 @@
 			if(index < 0) index = (this.items.length - 1);
 			
 			var target = this.items.eq(index);
-			var obj = {height: target.outerHeight()};
+			var obj = {};
 			var speed = cb ? 5 : this.opts.speed;
 			
 			if(!this.ul.is(':animated')) {			
@@ -193,7 +193,7 @@
 			this.el.find('.dots').remove();
 			
 			//  Remove key support
-			$(document).off('keydown', '#unslider');
+			$(document).off('keydown.unslider');
 		};
 	};
 	

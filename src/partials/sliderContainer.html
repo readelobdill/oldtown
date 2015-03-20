@@ -1,10 +1,13 @@
 <div class="slider-container">
 	<ul>
 		<li class="content-tile" ng-repeat="slide in slideDeck">
-			<div class="content-title">{{slide.title}} <span>{{slide.titleBold}}</span></div>
-			<div class="content-subtitle">{{slide.subtitle}}</div>
+			<h2 class="content-title">{{slide.title}} <span>{{slide.titleBold}}</span></h2>
+			<h4 class="content-subtitle">{{slide.subtitle}}</h4>
 			<img class="content-image" ng-src="{{slide.imageUrl}}"></img>
-			<div class="content-copy">{{slide.text}}</div>
+			<div class="content-copy">
+				<p ng-repeat="text in slide.texts">{{text}}</p>
+			</div>
+			<div class="text-fade"></div>
 		</li>
 	</ul>
 </div>
