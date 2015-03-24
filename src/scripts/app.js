@@ -169,7 +169,6 @@ angular.module('app', [])
 			restrict: "E",
 			replace: true,
 			templateUrl:'sliderContainer.html',
-			scope: true,
 			link: function(scope, elem){
 				var unslider;
 				scope.$watch('contentIndex', function(){
