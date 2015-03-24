@@ -172,7 +172,7 @@ angular.module('app', [])
 			link: function(scope, elem){
 				var unslider;
 				scope.$watch('contentIndex', function(){
-					$contentImage = $(elem).find('.content-image')
+					$contentImage = $(elem).find('.content-image');
 					if(unslider){
 						$contentImage.off('swipeleft').off('swiperight');
 						unslider.destroy();
