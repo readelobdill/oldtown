@@ -12,7 +12,7 @@ var sliderData = [
 		{
 			title: 'WANDERING',
 			titleBold: 'APP',
-			subtitle: 'NOT ALL WHO WONDER ARE LOST',
+			subtitle: 'NOT ALL WHO WANDER ARE LOST',
 			imageUrl: '/assets/pics/Wandering_App.jpg',
 			texts: [
 				'Old Town specializes in providing online software solutions and creative expertise that is unique to the world of outdoor recreation and active travel. We help businesses and organizations tell the story of their place and provide the tools they need to connect active people with great experiences.',
@@ -65,7 +65,7 @@ var sliderData = [
 		{
 			title: 'WANDERING',
 			titleBold: 'APP',
-			subtitle: 'NOT ALL WHO WONDER ARE LOST',
+			subtitle: 'NOT ALL WHO WANDER ARE LOST',
 			imageUrl: '/assets/pics/Wandering_App.jpg',
 			texts: [
 				'Old Town specializes in providing online software solutions and creative expertise that is unique to the world of outdoor recreation and active travel. We help businesses and organizations tell the story of their place and provide the tools they need to connect active people with great experiences.',
@@ -103,7 +103,7 @@ var sliderData = [
 		{
 			title: 'WANDERING',
 			titleBold: 'APP',
-			subtitle: 'NOT ALL WHO WONDER ARE LOST',
+			subtitle: 'NOT ALL WHO WANDER ARE LOST',
 			imageUrl: '/assets/pics/Wandering_App.jpg',
 			texts: ['Old Town specializes in providing online software solutions and creative expertise that is unique to the world of outdoor recreation and active travel. We help businesses and organizations tell the story of their place and provide the tools they need to connect active people with great experiences.']
 		},
