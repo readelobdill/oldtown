@@ -173,6 +173,7 @@ angular.module('app', [])
 				scope.$watch('contentIndex', function(){
 					$contentImage = $(elem).find('.content-image');
 					if(unslider){
+						$(elem).css({opacity: 0}).animate({opacity: 1});
 						$contentImage.off('swipeleft').off('swiperight');
 						unslider.destroy();
 					};
