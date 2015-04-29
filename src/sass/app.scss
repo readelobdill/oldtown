@@ -113,7 +113,65 @@ body{
 				bottom: 0px;
 				background: linear-gradient(rgba(255, 255, 255, 0), white);
 			}
+
+			.contact-form{
+				padding-top: 15px;
+				border-top: 5px solid #F29727;
+				width: 100%;
+				font-family: OpenSans-Light;
+				color: $charcoal;
+
+				.contact-info{
+					width: 100%;
+					margin-bottom: 25px;
+					overflow: hidden;
+					font-size: 14px;
+
+					.address, .other{
+						width: 50%;
+						float: left;
+
+						p{
+							line-height: 21px;
+						}
+					}
+				}
+
+				form{
+					margin: 0 auto; 
+					width: 60%;
+					font-family: OpenSans-Light;
+				}
+
+				input, textarea{
+					width: 100%;
+					font-size: 15px;
+					padding: 5px 10px;
+					margin-bottom: 15px;
+				}
+
+				textarea{
+					height: 200px;
+				}
+
+				button{
+					float: right;
+					font-size: 15px;
+					cursor: pointer;
+					font-family: OpenSans-Light;
+				}
+
+				.sent-message{
+					line-height: 20px;
+					text-align: center;
+					width: 75%;
+					margin: 0 auto;
+				}
+
+			}
 		}
+
+
 		
 		.dots{
 			position: absolute;

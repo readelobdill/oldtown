@@ -140,9 +140,7 @@ var sliderData = [
 		{
 			title: 'CONTACT',
 			titleBold: 'OLD TOWN CREATIVE + INTERACTIVE',
-			subtitle: "PRODUCTS, MAPS, AND PROGRAMMING, IT'S WHAT WE DO",
-			// imageUrl: '/assets/pics/Introducing-Old-Town.jpg',
-			texts: ['Old Town specializes in providing online software solutions and creative expertise that is unique to the world of outdoor recreation and active travel. We help businesses and organizations tell the story of their place and provide the tools they need to connect active people with great experiences.']
+			subtitle: "PRODUCTS, MAPS, AND PROGRAMMING, IT'S WHAT WE DO"
 		}
 	]
 ]
@@ -162,6 +160,7 @@ angular.module('app', [])
     	$scope.changeIndex = function(index){
     		$scope.slideDeck = sliderData[index];
     		$scope.contentIndex = index;
+    		$scope.isContactPage = index === 4;
     	};
 	}])
     .directive('sliderContainer', function(){

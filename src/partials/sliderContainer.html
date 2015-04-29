@@ -3,11 +3,33 @@
 		<li class="content-tile" ng-repeat="slide in slideDeck">
 			<h2 class="content-title">{{slide.title}} <span>{{slide.titleBold}}</span></h2>
 			<h4 class="content-subtitle">{{slide.subtitle}}</h4>
-			<img class="content-image" ng-src="{{slide.imageUrl}}"></img>
-			<div class="content-copy">
+			<img class="content-image" ng-src="{{slide.imageUrl}}" ng-hide="isContactPage"></img>
+			<div class="content-copy" ng-hide="isContactPage">
 				<p ng-repeat="text in slide.texts">{{text}}</p>
 			</div>
-			<div class="text-fade"></div>
+			<div class="text-fade" ng-hide="isContactPage"></div>
+			<div class="contact-form" ng-if="isContactPage" ng-submit="messageSent = true">
+				<div class="contact-info">
+					<div class="address">
+						<p>Old Town Creative</p>
+						<p>231 East 1st Street</p>
+						<p>PO Box 4420</p>
+						<p>Whitefish, Montana 59937</p>
+					</div>
+					<div class="other">
+						<p>Phone: 406-730-2533</p>
+						<p>Fax: 866-689-4245</p>
+						<p>email: info@oldtowncreative.com</p>
+					</div>
+				</div>
+				<form ng-hide="messageSent">
+					<input name="name" ng-model="item.name" placeholder="Name" required/>
+					<input type="email" name="email" ng-model="item.email" placeholder="Email" required/>
+					<textarea name="text" ng-model="item.text" placeholder="Hey there..." required></textarea>
+					<button class="send-contact">Contact Us</button>
+				</form>
+				<div class="sent-message" ng-show="messageSent">Thanks {{item.name}}, we'll be in touch with you shortly.</div>
+			</div>
 		</li>
 	</ul>
 </div>
