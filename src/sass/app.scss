@@ -1,9 +1,10 @@
+$charcoal: #36454f;
 body{
     box-sizing: border-box;
 	padding-top: 80px;
 	padding: 80px 50px 0 50px;
 	min-width: 768px;
-	color: #583618;
+	color: $charcoal;
 
 	*, *:before, *:after {
 	  box-sizing: inherit;
